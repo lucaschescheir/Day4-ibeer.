@@ -11,230 +11,217 @@ COLORS:
 light tan: #eeebda
 
 */
-body{
-    font-family: 'Noto Serif', serif;
-    line-height: 1.8;
-    margin: 0px;
-    background-color: #eeebda;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+body {
+  font-family: 'Noto Serif', serif;
+  line-height: 1.8;
+  margin: 20px;
+  background-color: #eeebda;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-h1, h2, h3{
-    font-family: "Josefin Sans", sans-serif;
-    margin-top: 0;
+
+h1, h2, h3 {
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 0;
 }
-img{
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
-    display: block;
+
+img {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  display: block;
 }
-.wrapper{
-    width: 1000px;
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 100px;
 
-
-
-
-
-
-
-    /*
+.wrapper {
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+  /*
         TODO:
         - Center up the page
         - Create a flexbox containerer for
         the major page sections
     */
 }
-#site-header {
-display: flex;
-flex-basis: 100%;
-flex-direction: column;
-z-index: -1;
-flex-basis: 100%;
-position: relative;
 
-    /*
+#site-header {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  z-index: -1;
+  flex-basis: 100%;
+  position: relative;
+  /*
         TODO
         - Flexbox property here
     */
 }
-#site-header div{
-    text-align: center;
-    padding: 60px 0 120px 0;
-    font-size: 4em;
-    background-image: url("img/header-img.jpg");
-    background-size: cover;
-    background-position: right bottom;
-}
-#site-header div h1,
-#site-header div h3{
-    margin: 0;
-    line-height: 1;
-    position: relative;
-}
-#site-header div h1{
-    top: 20px;
-}
-#site-header div h3{
-    color: white;
-    bottom: 20px;
-    text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
-    font-family: 'Dancing Script'
 
-    /*
+#site-header div {
+  text-align: center;
+  padding: 60px 0 120px 0;
+  font-size: 4em;
+  background-image: url("img/header-img.jpg");
+  background-size: cover;
+  background-position: right bottom;
+}
+
+#site-header div h1, #site-header div h3 {
+  margin: 0;
+  line-height: 1;
+  //position: relative;
+}
+
+#site-header div h1 {
+  top: 20px;
+}
+
+#site-header div h3 {
+  color: white;
+  bottom: 20px;
+  text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3);
+  font-family: 'Dancing Script'
+  /*
         TODO:
         - Use the script font: 'Dancing Script' fot this text
     */
 }
-#main-navigation{
-    background: #444;
-    display: flex;
 
-
-    /*
+#main-navigation {
+  background: #444;
+  display: flex;
+  /*
         TODO:
         - Use Flexbox to arrange the navigation links
     */
 }
-#main-navigation a{
-    display: flex;
-    align-content: flex-start;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 10px 20px;
 
-    /*
+#main-navigation a {
+  display: flex;
+  align-content: flex-start;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  /*
         TODO:
         - Flexbox - Create general spacing between nav links
     */
 }
-#main-navigation #logo{
-    margin-right: 400px;
-    display: flex;
-    flex-grow: 3;
 
-    /*
+#main-navigation #logo {
+  margin-right: 400px;
+  display: flex;
+  flex-grow: 3;
+  /*
         TODO:
         - Flexbox - The logo needs to take up more space
         that the other links
     */
 }
-main{
-    padding: 20px;
-    background-color: #444;
-    box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    display: flex;
-    //flex-direction: column;
-    //width:80%;
-    flex-basis: 60%;
-    position:relative;
-    //left: 0px;
-    //top: 0px;
-    z-index: -1;
-    margin-left:10%;
-    flex-wrap: wrap;
-    margin-top: -10%;
 
+main {
+  padding: 20px;
+  background-color: #444;
+  box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3);
+  display: flex;
 
+  flex-basis: 60%;
+  position: relative;
+  z-index: -1;
+  margin-left: 10%;
+  flex-wrap: wrap;
+  bottom: 50px;
+  //margin-top: -10%;
+  TODO: - Flexbox: Set the starting width of this element - Use relative positioning to bump this upward */
+}
 
-
+aside {
+  padding: 20px;
+  background-color: #eee;
+  box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3);
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  flex-basis: 12%;
+  //margin-top: -10%;
+  bottom: 50px;
+  /*
         TODO:
         - Flexbox: Set the starting width of this element
         - Use relative positioning to bump this upward
     */
 }
-aside{
-    padding: 20px;
-    background-color: #eee;
-    box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    display: flex;
-    //position: relative;
-    //width: 12%;
-    //align-self: flex-start;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: row;
-    flex-basis: 12%;
-    margin-top: -10%;
 
+aside h3 {
+  text-align: center;
+  margin: 0 0 10px 0;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #ccc;
+}
 
+aside img {
+  float: right;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  border: 2px solid white;
+}
 
+article {
+  background-color: white;
+  box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3);
+  padding: 20px;
+  margin-bottom: 20px;
+}
 
+article h2 {
+  line-height: 1em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 10px 0;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #ccc;
+  text-transform: uppercase;
+}
 
-    /*
-        TODO:
-        - Flexbox: Set the starting width of this element
-        - Use relative positioning to bump this upward
-    */
+article time {
+  font-size: 0.8em;
+  text-align: center;
+  display: block;
+  margin-bottom: 30px;
+  color: #666;
 }
-aside h3{
-    text-align: center;
-    margin: 0 0 10px 0;
-    padding: 0 0 10px 0;
-    border-bottom: 1px solid #ccc;
-}
-aside img{
-  float:right;
-    border-radius: 50%;
-    margin-bottom: 30px;
-    border: 2px solid white;
-}
-article{
-    background-color: white;
-    box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    padding: 20px;
-    margin-bottom: 20px;
-}
-article h2{
-    line-height: 1em;
-    font-weight: bold;
-    text-align: center;
-    margin: 0 0 10px 0;
-    padding: 0 0 10px 0;
-    border-bottom: 1px solid #ccc;
-    text-transform: uppercase;
-}
-article time{
-    font-size: 0.8em;
-    text-align: center;
-    display: block;
-    margin-bottom: 30px;
-    color: #666;
-}
-article img{
-  float:right;
-    /*
+
+article img {
+  float: right;
+  /*
         TODO:
         - Float article images to the right
         and match sizes and spacing to the mockup
     */
 }
-article footer p{
 
-
-    /*
+article footer p {
+  /*
         TODO:
         - Style the article footer
         HINT: Look to the article header;
     */
 }
-#site-footer{
-display: flex;
-    background: #444;
-    color: white;
-    padding-left: 20px;
-    width: 1250px;
-    align-self: center;
 
-
-    /*
+#site-footer {
+  display: flex;
+  background: #444;
+  color: white;
+  padding-left: 20px;
+  width: 1250px;
+  align-self: center;
+  /*
         TODO:
         - Style the site footer
     */
